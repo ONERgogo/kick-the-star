@@ -22,25 +22,14 @@
     <div class="star-silhouette">
       <div class="glow"></div>
       <div class="star-figure" id="starFigure">
-        <svg viewBox="0 0 160 240" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
-          <defs>
-            <linearGradient id="starGrad" x1="80" y1="0" x2="80" y2="240" gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#C9A96E" stop-opacity="0.6"/>
-              <stop offset="1" stop-color="#C9A96E" stop-opacity="0.15"/>
-            </linearGradient>
-          </defs>
-          <path d="M80 12C68 12 56 24 52 40H48C32 40 24 56 24 72V96C20 104 16 116 16 128V152C16 172 28 188 44 200V216C44 228 60 240 80 240C100 240 116 228 116 216V200C132 188 144 172 144 152V128C144 116 140 104 136 96V72C136 56 128 40 112 40H108C104 24 92 12 80 12Z" fill="url(#starGrad)"/>
-          <circle cx="64" cy="100" r="4" fill="rgba(255,255,255,0.3)"/>
-          <circle cx="96" cy="100" r="4" fill="rgba(255,255,255,0.3)"/>
-          <path d="M68 124C68 124 74 132 80 132C86 132 92 124 92 124" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none" stroke-linecap="round"/>
-        </svg>
+        <div class="money-symbol">¥</div>
       </div>
     </div>
     <div class="star-label">
-      <div class="name">流量至尊 · 天选之子</div>
+      <div class="name">天价出场费</div>
       <div class="cost-tag">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v12M8 10h8M8 14h8"/></svg>
-        预算占用 ¥1,000,000
+        吞掉了整个预算 ¥1,000,000
       </div>
     </div>
   </div>
@@ -52,13 +41,13 @@
     <span class="ghost-name">独立新声</span>
   </div>
 
-  <button class="kick-btn" id="kickBtn" onclick="kickTheStar()">踢走 TA</button>
+  <button class="kick-btn" id="kickBtn" onclick="kickTheStar()">砍掉这笔钱</button>
 </section>
 
 <!-- Budget reveal overlay -->
 <div class="budget-reveal" id="budgetReveal">
   <div class="amount">¥1,000,000</div>
-  <div class="tagline">预算已释放<br>请重新邀请那些真正属于现场的声音</div>
+  <div class="tagline">预算已释放<br>把钱花在那些真正属于现场的声音上</div>
   <button class="enter-btn" onclick="enterAct2()">开始组建你的阵容 →</button>
 </div>
 
@@ -124,6 +113,8 @@
 
 <!-- Audio player (hidden) -->
 <audio id="audioPlayer" preload="none"></audio>
+
+<div style="position:fixed;bottom:8px;left:0;right:0;text-align:center;font-size:10px;color:rgba(0,0,0,0.2);letter-spacing:1px;pointer-events:none;">本页面为虚构创意互动，不针对任何真实艺人或音乐节品牌</div>
 
 <script src="app.js"></script>
 </body>
